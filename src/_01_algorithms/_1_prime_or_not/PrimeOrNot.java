@@ -8,9 +8,14 @@ public class PrimeOrNot {
 		// TODO Auto-generated method stub
 	String numS = JOptionPane.showInputDialog(null, "Give #");
 		int num = Integer.parseInt(numS);
-		int count = 100;
-		if (num%count > 0)
+		int count = num - 1;
+		while (count > 1) {
+		 if (num%count == 0) {
+				System.out.println("Not prime");
+				System.exit(0);
+		}
 		 count--;
 	}
-
+		System.out.println("Its' prime");
+	}
 }
