@@ -21,10 +21,18 @@ public class GoofyNames {
 			for (int count = 0; count < name.length(); count ++) {
 				// 4. Create a char variable to store the next character of the name
 				//    use .charAt()
-			char l = name.charAt(1);
-				
-				// 5. Use MODULO operator (%) to identify if it is an EVEN or ODD character.
 			
+				// 5. Use MODULO operator (%) to identify if it is an EVEN or ODD character.
+					char l = name.charAt(count);
+					if (count%2 == 0) {
+						l = Character.toLowerCase(l);
+					}
+					else {
+						l = Character.toUpperCase(l);
+					}
+					
+				goofyName += l;
+				
 			
 				// 6. Even characters should be made uppercase and odd characters made lowercase
 				//    HINT: use Character.toUpperCase() or Character.toLowerCase()
@@ -34,7 +42,7 @@ public class GoofyNames {
 
 			}
 		// 8. Use pop-up to show user their Goofy name
-
+			JOptionPane.showMessageDialog(null, goofyName);
 	}
 }
 
