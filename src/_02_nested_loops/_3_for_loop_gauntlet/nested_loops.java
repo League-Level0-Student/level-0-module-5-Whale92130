@@ -48,13 +48,32 @@ public class nested_loops {
 		 }
 		 //displaying 10,11,12,20,21,etc
 		 for(int i = 0; i < 3; i++) {
-			 System.out.println(i);
 			 for(int o = 0; o < 3; o++) {
-				 System.out.println(o);
+				 System.out.println(i+" "+o);
 				 
 			 }
 		 }
-		 
+		 //displaying 123, 456, 789
+		 for(int p = 0; p < 3; p++) {
+			 for(int a = 1; a < 4; a++) {
+				 System.out.print(a+p+p+p + " ");
+			 }
+			 System.out.println();
+		 }
+		 //displaying 10x10 grid
+		 for(int s = 0; s < 10; s++) {
+			 for(int d = 1; d < 11; d++) {
+				 System.out.print(d+s*10 + " ");
+			 }
+			 System.out.println();
+		 }
+		 //displaying *'s
+		 for(int f = 0; f < 6; f++) {
+			 for(int g = 1; g < 4; g++) {
+				 System.out.print("* ");
+			 }
+			 System.out.println();
+		 }
 	}
 
 }
