@@ -69,7 +69,7 @@ public class nested_loops {
 		 }
 		 //displaying *'s
 		 for(int f = 0; f < 6; f++) {
-			 for(int g = 1; g < 4; g++) {
+			 for(int g = 0; g < 1 + f; g++) {
 				 System.out.print("* ");
 			 }
 			 System.out.println();
